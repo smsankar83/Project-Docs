@@ -8,7 +8,7 @@
   <Author>Sankar Murugan</Author>
   <LastAuthor>Shwan Rapp</LastAuthor>
   <Created>2015-07-01T17:54:46Z</Created>
-  <LastSaved>2015-07-02T18:56:30Z</LastSaved>
+  <LastSaved>2015-07-02T19:29:44Z</LastSaved>
   <Company>Shutterfly, Inc.</Company>
   <Version>14.0</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>12240</WindowHeight>
   <WindowWidth>25600</WindowWidth>
-  <WindowTopX>31580</WindowTopX>
-  <WindowTopY>-4400</WindowTopY>
+  <WindowTopX>-30336</WindowTopX>
+  <WindowTopY>-3920</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -33,10 +33,8 @@
    <NumberFormat/>
    <Protection/>
   </Style>
-  <Style ss:ID="s28">
-   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
-  </Style>
-  <Style ss:ID="s29">
+  <Style ss:ID="m2144350424">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -44,7 +42,15 @@
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
   </Style>
-  <Style ss:ID="s30">
+  <Style ss:ID="s62">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s70">
    <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -53,16 +59,7 @@
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
   </Style>
-  <Style ss:ID="s31">
-   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
-   <Borders>
-    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
-   </Borders>
-  </Style>
-  <Style ss:ID="s32">
+  <Style ss:ID="s71">
    <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -72,7 +69,7 @@
    </Borders>
    <Interior/>
   </Style>
-  <Style ss:ID="s33">
+  <Style ss:ID="s72">
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -81,16 +78,7 @@
    </Borders>
    <Interior/>
   </Style>
-  <Style ss:ID="s34">
-   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
-   <Borders>
-    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
-   </Borders>
-  </Style>
-  <Style ss:ID="s35">
+  <Style ss:ID="s73">
    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -99,14 +87,36 @@
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
   </Style>
-  <Style ss:ID="s38">
-   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s79">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
@@ -117,86 +127,87 @@
    <Column ss:Index="4" ss:Width="134"/>
    <Column ss:Index="6" ss:Width="77"/>
    <Column ss:AutoFitWidth="0" ss:Width="177"/>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Phase 1</Data></Cell>
-    <Cell ss:StyleID="s29"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Phase 1</Data></Cell>
+    <Cell ss:StyleID="s62"/>
    </Row>
-   <Row>
-    <Cell ss:MergeDown="6" ss:StyleID="s38"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Name the project</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeDown="6" ss:StyleID="m2144350424"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name the project</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s29"><Data ss:Type="String">Set up Git hub versioning</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">Set up Git hub versioning</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s29"><Data ss:Type="String">Set up JIRA project account</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">Set up JIRA project account</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s29"><Data ss:Type="String">Build Spring boot startup</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">Build Spring boot startup</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s30"><Data ss:Type="String">Add required EP dependencies &amp; use services</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s70"><Data ss:Type="String">Add required EP dependencies &amp; use services</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s32"><Data ss:Type="String">Start front end design using Angular JS</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s71"><Data ss:Type="String">Start front end design using Angular JS</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s33"><Data ss:Type="String">Identify the services to be reused</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s72"><Data ss:Type="String">Identify the services to be reused</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Authentication</Data></Cell>
-    <Cell ss:StyleID="s33"><Data ss:Type="String">Need to meed for implementing Apigee</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Need to meed for implementing Apigee</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Authorization</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">Need to discuss on expression based authorization in Spring</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Authorization</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Need to discuss on expression based authorization in Spring</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Change Sets</Data></Cell>
-    <Cell ss:StyleID="s35"><Data ss:Type="String">Read, Object locking</Data></Cell>
-    <Cell ss:StyleID="s28"/>
-    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s28"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Change Sets</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Read, Object locking</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s74"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Content Space</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Content Space</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Dynamic Content</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dynamic Content</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search, Create, Update &amp; Delete</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Content Space Preview</Data></Cell>
-    <Cell ss:StyleID="s35"><Data ss:Type="String">Dynamic content rendering from EP Engine</Data></Cell>
-    <Cell ss:StyleID="s28"/>
-    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s28"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Content Space Preview</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Dynamic content rendering from EP Engine</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s74"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Saved Conditions</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Search, Create</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Saved Conditions</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search, Create</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Override EP Tags</Data></Cell>
-    <Cell ss:StyleID="s29"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Override EP Tags</Data></Cell>
+    <Cell ss:StyleID="s62"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Data Sync DB flag setting</Data></Cell>
-    <Cell ss:StyleID="s34"><Data ss:Type="String">update TCHANGESET table to mark change set as 'ready to push'</Data></Cell>
-    <Cell ss:StyleID="s28"/>
-    <Cell ss:Index="5" ss:MergeAcross="2" ss:StyleID="s28"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Sync DB flag setting</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">update TCHANGESET table to mark change set as 'ready to push'</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="5" ss:MergeAcross="2" ss:StyleID="s74"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Object ReIndex</Data></Cell>
-    <Cell ss:StyleID="s31"><Data ss:Type="String">update UINDEXNOTIFY table</Data></Cell>
-    <Cell ss:StyleID="s28"/>
-    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s28"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Object ReIndex</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">update UINDEXNOTIFY table</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s74"/>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
    <Print>
     <ValidPrinterInfo/>
     <PaperSizeIndex>9</PaperSizeIndex>
@@ -219,33 +230,77 @@
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="87"/>
+   <Row ss:AutoFitHeight="0"/>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Frontend">
-  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="2" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="14" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
-   <Row>
+   <Column ss:AutoFitWidth="0" ss:Width="89"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s84">
+    <Cell><Data ss:Type="String">Phase 1 Objectives</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s79"/>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Setup Info</Data></Cell>
     <Cell><Data ss:Type="String">Maven Frontend Goal</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">Determine missing dependencies</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">Determine missing dependencies (Frameworks, external components)</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4"><Data ss:Type="String">Retrieve missing dependencies with Bower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Move dependencies to the web path (CSS and JS files)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Determine freshness of CSS files</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Main CSS is compiled with Less and includes Bootstrap 3 from source</Data></Cell>
+   </Row>
+   <Row ss:Index="9" ss:AutoFitHeight="0">
+    <Cell ss:Index="2"><Data ss:Type="String">Angular Scaffolding</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">Initial bootstrapping JSP page for single page app</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Lazy loading modules with services on demand</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Lazy loading modules with directives on demand</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">Create &quot;view&quot; system which is a page partial generated from JSP</Data></Cell>
+   </Row>
+   <Row ss:Index="14" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">User Login</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>1</ActiveRow>
+     <RangeSelection>R1:R2</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
