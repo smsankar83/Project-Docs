@@ -8,7 +8,7 @@
   <Author>Sankar Murugan</Author>
   <LastAuthor>Shwan Rapp</LastAuthor>
   <Created>2015-07-01T17:54:46Z</Created>
-  <LastSaved>2015-07-02T19:29:44Z</LastSaved>
+  <LastSaved>2015-07-02T22:40:21Z</LastSaved>
   <Company>Shutterfly, Inc.</Company>
   <Version>14.0</Version>
  </DocumentProperties>
@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>12240</WindowHeight>
-  <WindowWidth>25600</WindowWidth>
-  <WindowTopX>-30336</WindowTopX>
-  <WindowTopY>-3920</WindowTopY>
+  <WindowHeight>16320</WindowHeight>
+  <WindowWidth>26340</WindowWidth>
+  <WindowTopX>-31536</WindowTopX>
+  <WindowTopY>-6280</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -114,9 +114,12 @@
    </Borders>
    <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
   </Style>
-  <Style ss:ID="s84">
+  <Style ss:ID="s89">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s106">
    <Borders/>
-   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Font ss:FontName="Calibri" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
@@ -246,45 +249,219 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Frontend">
-  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="14" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="60" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="89"/>
-   <Row ss:AutoFitHeight="0" ss:StyleID="s84">
+   <Column ss:AutoFitWidth="0" ss:Width="136"/>
+   <Column ss:AutoFitWidth="0" ss:Width="203"/>
+   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s106">
     <Cell><Data ss:Type="String">Phase 1 Objectives</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:StyleID="s79"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s79">
+    <Cell><Data ss:Type="String">Section</Data></Cell>
+    <Cell><Data ss:Type="String">Component/Feature Required</Data></Cell>
+    <Cell><Data ss:Type="String">Overview of Task</Data></Cell>
+   </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Setup Info</Data></Cell>
     <Cell><Data ss:Type="String">Maven Frontend Goal</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">Determine missing dependencies (Frameworks, external components)</Data></Cell>
+    <Cell><Data ss:Type="String">Determine missing dependencies (Frameworks, external components)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Retrieve missing dependencies with Bower</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Retrieve missing dependencies with Bower</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Move dependencies to the web path (CSS and JS files)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Move dependencies to the web path (CSS and JS files)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Determine freshness of CSS files</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Determine freshness of CSS files</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Main CSS is compiled with Less and includes Bootstrap 3 from source</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Main CSS is compiled with Less and includes Bootstrap 3 from source</Data></Cell>
    </Row>
    <Row ss:Index="9" ss:AutoFitHeight="0">
     <Cell ss:Index="2"><Data ss:Type="String">Angular Scaffolding</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">Initial bootstrapping JSP page for single page app</Data></Cell>
+    <Cell><Data ss:Type="String">Initial bootstrapping JSP page for single page app</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Lazy loading modules with services on demand</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Lazy loading modules with services on demand</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Lazy loading modules with directives on demand</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Lazy loading modules with directives on demand</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Create &quot;view&quot; system which is a page partial generated from JSP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Create &quot;view&quot; system which is a page partial generated from JSP</Data></Cell>
    </Row>
    <Row ss:Index="14" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Roles Service</Data></Cell>
+    <Cell><Data ss:Type="String">getLoginStatus</Data></Cell>
+    <Cell><Data ss:Type="String">Verifies current authorization token and returns if the user is logged in or not.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2"><Data ss:Type="String">attemptLogin</Data></Cell>
+    <Cell><Data ss:Type="String">Performs a user login.  Generates authorization token that is stored in session cookie.</Data></Cell>
+   </Row>
+   <Row ss:Index="17" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">User Login</Data></Cell>
+    <Cell><Data ss:Type="String">View - Login</Data></Cell>
+    <Cell><Data ss:Type="String">Create JSP that displays the HTML output for this partial</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3"><Data ss:Type="String">Create controller that will interact with user and NG service (missing required fields, display errors, etc)</Data></Cell>
+   </Row>
+   <Row ss:Index="20" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Dynamic Content Service</Data></Cell>
+    <Cell><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell><Data ss:Type="String">Service wires into web API to: Create DC; Update DC; retrieve DC; Delete DC</Data></Cell>
+   </Row>
+   <Row ss:Index="22" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Dynamic Content</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">View - DC</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Controller that loads paginated amount of content into DC directive</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Search/filter panel</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Directive - DC</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">directive will handle picture, name, status, container, size as well as display control buttons depending on the set state of DC</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DC Edit Main</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Controller that handles new/editing Dynamic Content</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DC Edit Attributes</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">List a set of attributes that provide a means of clearing or editing values.  List can be filtered by language.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Modal value editor.  Different views based off of value type.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Saved Condition Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Wiring for Create Condition; Update Condition; Retrieve Condition; Delete Condition</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Save Condition</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">View - Saved Condition</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">List conditions and give the user the ability to create new, edit or delete a saved condition.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - Saved Condition Editor Summary</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Specify Name and Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Directive - Condition Field</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Add/Delete Condition type; Condition operator; Condition value  condition statement with logical AND/OR between statements</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s89"><Data ss:Type="String">Add/Delete Condition blocks with logical AND/OR between blocks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - Save Condition Builder</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Allows user to create or edit a saved condition by using the Condition field directive, start and end date picker and specify a store using a dual listbox.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">DC Delivery Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Service wires into web API to be able to: Create DCD; Update DCD; retrieve DCD; Delete DCD</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">View - DCD</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Displays DCD directives paginated</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">search/filter panel</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Directive - DCD</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Directive will display DC picture; DC Name; Change Set Name; Priority; Time Condition; Shopper Condition; Store Condition;  Change Set status and control buttons depending on DCD state</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DCD Edit Summary</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Create/Edit DCD: Edit Name; Description and set priority</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DCD Edit DC</Data></Cell>
+    <Cell><Data ss:Type="String">Create/Edit DCD: List and select the DC.  Filters for Name; Description; Content Wrapper; Container Type</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DCD Edit CS</Data></Cell>
+    <Cell><Data ss:Type="String">Create/Edit DCD:  List of available content spaces with a name filter as well as a current assigned listbox in dual listbox fashion.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - DCD Edit Shopper</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">User sets the condition via Radio Button:  All Shoppers; Saved Condition; Create a Condition</Data></Cell>
+   </Row>
+   <Row ss:Index="46" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">EP Overrides</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell><Data ss:Type="String">Set and clear tag values</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - EP Tags</Data></Cell>
+    <Cell><Data ss:Type="String">Display a list of possible EP tags</Data></Cell>
+   </Row>
+   <Row ss:Index="49" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Content Space Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell><Data ss:Type="String">Wiring to talk to web API to Create CS; Update CS; Retrieve CS; Delete CS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Content Space</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Directive - Content Space</Data></Cell>
+    <Cell><Data ss:Type="String">Displays DC based on DCD rules and current EP overrides.  Displays name; description; change set assigned to.   Has edit and delete control buttons depending on the state of CS.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - Content Space</Data></Cell>
+    <Cell><Data ss:Type="String">Provides filter/search panel.  Lists CS Directive paginated.  Gives the user the ability to create new CS. Goto EP tag editor.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Modal - CS Editor</Data></Cell>
+    <Cell><Data ss:Type="String">Allows user to create or edit a Content Space</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Directive - DCD Viewer</Data></Cell>
+    <Cell><Data ss:Type="String">Displays the name; priority; assigned CSN; DC Name; type; status; container type; shoper condition; time condition and store condition</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">View - Content Space Full View</Data></Cell>
+    <Cell><Data ss:Type="String">Displays content that was choosen by the DCD logic</Data></Cell>
+   </Row>
+   <Row ss:Index="57" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Settings Service</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell><Data ss:Type="String">Wires to API to Update Settings; Retrieve Settings</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">View - Settings</Data></Cell>
+    <Cell><Data ss:Type="String">Has a selectable pull down for which store to view settings.  Provides a list of settings available for the selected store that the user can edit values</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s89"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
+    <Cell><Data ss:Type="String">Editor for value based on what is the set type.   Most likely already be written by &quot;Dynamic Content: Modal - Attribute Editor&quot;</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -296,11 +473,12 @@
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <Selected/>
+   <TopRowVisible>17</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>1</ActiveRow>
-     <RangeSelection>R1:R2</RangeSelection>
+     <ActiveRow>59</ActiveRow>
+     <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
