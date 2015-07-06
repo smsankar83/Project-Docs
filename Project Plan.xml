@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8060</WindowHeight>
-  <WindowWidth>19100</WindowWidth>
-  <WindowTopX>60</WindowTopX>
-  <WindowTopY>0</WindowTopY>
+  <WindowHeight>10260</WindowHeight>
+  <WindowWidth>22900</WindowWidth>
+  <WindowTopX>31360</WindowTopX>
+  <WindowTopY>-1660</WindowTopY>
   <ActiveSheet>3</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -33,7 +33,7 @@
    <NumberFormat/>
    <Protection/>
   </Style>
-  <Style ss:ID="m2122733928">
+  <Style ss:ID="m2122686920">
    <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -126,7 +126,7 @@
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
   </Style>
-  <Style ss:ID="s90">
+  <Style ss:ID="s82">
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
   </Style>
  </Styles>
@@ -143,7 +143,7 @@
     <Cell ss:StyleID="s62"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:MergeDown="6" ss:StyleID="m2122733928"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="m2122686920"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">Name the project</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -226,7 +226,6 @@
     <VerticalResolution>-4</VerticalResolution>
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
-   <TopRowVisible>10</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -237,21 +236,274 @@
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="Change Sets">
-  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+ <Worksheet ss:Name="Backend">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="42" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="87"/>
-   <Row ss:AutoFitHeight="0"/>
+   <Column ss:AutoFitWidth="0" ss:Width="173"/>
+   <Column ss:AutoFitWidth="0" ss:Width="366"/>
+   <Column ss:AutoFitWidth="0" ss:Width="424"/>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Change Sets</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Read Change set for the user and keep it in cache/session</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Keep track of any changes into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Dynamic Content</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle DC actions</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Read/ search content space to be attached to the Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Save Condition</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Conent Space</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle Content Space actions</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when Change Set is not selected</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Read Content space</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">com.shutterfly.ep.service.contentspace.impl.SflyDynamicContentServiceImpl</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">extension.core</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Content space</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Content space</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Content space</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Preview the dynamic content by evaluating override EP tag value</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle DCD actions</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Use saved condition routine</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Read/ search for dynamic contents to be attached to the DCD</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Override EP Tags</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Read the tags from DB and display</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Save the changes</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Data Sync DB flag setting</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">update TCHANGESET table to mark change set as 'ready to push'</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Object ReIndex</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">update UINDEXNOTIFY table</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
-   <Unsynced/>
-   <Print>
-    <ValidPrinterInfo/>
-    <PaperSizeIndex>9</PaperSizeIndex>
-    <HorizontalResolution>-4</HorizontalResolution>
-    <VerticalResolution>-4</VerticalResolution>
-   </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>19</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -480,7 +732,6 @@
     <VerticalResolution>-4</VerticalResolution>
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
-   <TopRowVisible>38</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -491,7 +742,7 @@
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="Backend">
+ <Worksheet ss:Name="Backend Endpoints">
   <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="50" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="159"/>
@@ -607,35 +858,35 @@
    </Row>
    <Row ss:Index="40" ss:AutoFitHeight="0">
     <Cell ss:Index="2"><Data ss:Type="String">Content Space</Data></Cell>
-    <Cell ss:StyleID="s90"><Data ss:Type="String">Implement CS service from EP</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Implement CS service from EP</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/cs/create</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/create</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/cs/retrieve</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/retrieve</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/cs/update</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/update</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/cs/delete</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/delete</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/cs/search</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/search</Data></Cell>
    </Row>
    <Row ss:Index="47" ss:AutoFitHeight="0">
     <Cell ss:Index="2"><Data ss:Type="String">Settings</Data></Cell>
-    <Cell ss:StyleID="s90"><Data ss:Type="String">Implement Settings service from EP</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Implement Settings service from EP</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/dcd/retrieve</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/retrieve</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/dcd/update</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/update</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s90"><Data ss:Type="String">Create endpoint POST: /api/dcd/search</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/search</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -647,12 +898,6 @@
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <Selected/>
-   <Panes>
-    <Pane>
-     <Number>3</Number>
-     <ActiveCol>2</ActiveCol>
-    </Pane>
-   </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
