@@ -6,9 +6,9 @@
  xmlns:html="http://www.w3.org/TR/REC-html40">
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Author>Sankar Murugan</Author>
-  <LastAuthor>Shwan Rapp</LastAuthor>
+  <LastAuthor>Sankar Murugan</LastAuthor>
   <Created>2015-07-01T17:54:46Z</Created>
-  <LastSaved>2015-07-06T05:02:33Z</LastSaved>
+  <LastSaved>2015-07-07T20:31:31Z</LastSaved>
   <Company>Shutterfly, Inc.</Company>
   <Version>14.0</Version>
  </DocumentProperties>
@@ -16,11 +16,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>10260</WindowHeight>
-  <WindowWidth>22900</WindowWidth>
-  <WindowTopX>31360</WindowTopX>
-  <WindowTopY>-1660</WindowTopY>
-  <ActiveSheet>3</ActiveSheet>
+  <WindowHeight>15900</WindowHeight>
+  <WindowWidth>38400</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -33,7 +33,7 @@
    <NumberFormat/>
    <Protection/>
   </Style>
-  <Style ss:ID="m2122686920">
+  <Style ss:ID="m2121226264">
    <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
@@ -109,25 +109,29 @@
    </Borders>
   </Style>
   <Style ss:ID="s78">
-   <Borders/>
-   <Font ss:FontName="Calibri" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
-  </Style>
-  <Style ss:ID="s79">
-   <Borders>
-    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
-   </Borders>
    <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
   </Style>
-  <Style ss:ID="s80">
+  <Style ss:ID="s79">
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
   </Style>
   <Style ss:ID="s81">
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
   </Style>
   <Style ss:ID="s82">
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s128">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
@@ -143,7 +147,7 @@
     <Cell ss:StyleID="s62"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:MergeDown="6" ss:StyleID="m2122686920"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="m2121226264"><Data ss:Type="String">Set up Infrastructure</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">Name the project</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -237,273 +241,316 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Backend">
-  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="42" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="46" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="173"/>
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="173"/>
    <Column ss:AutoFitWidth="0" ss:Width="366"/>
    <Column ss:AutoFitWidth="0" ss:Width="424"/>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Change Sets</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Column ss:Width="80"/>
+   <Column ss:Index="9" ss:Width="74"/>
+   <Column ss:Width="324"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s128"><Data ss:Type="String">Priority</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Usecase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Action</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Read Change set for the user and keep it in cache/session</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1.1000000000000001</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Change Sets</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Read Change sets and show in drop down and keep it in cache/session</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1.2</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">When user selects a change set, keep it associated with the user</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Keep track of any changes into selected Change set</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1.3</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Disable create,update/delete options when CS is not selected</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1.4</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Keep track of any changes into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Dynamic Content</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:Index="4" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle DC actions</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.1</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Conent Space</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Disable create/delete options when Change Set is not selected</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Dynamic content</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.2000000000000002</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Controller to handle Content Space actions</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Dynamic content</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.2999999999999998</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Search/Read Content space</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Dynamic content</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.4</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Create Content space</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Read/ search content space to be attached to the Dynamic content</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.5</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Edit Content space</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.6</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Delete Content space</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2.7</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Save Condition</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:Index="4" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Conent Space</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.1</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Dynamic Content</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle Content Space actions</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Controller to handle DC actions</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when Change Set is not selected</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.3</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Read/ search content space to be attached to the Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Read Content space</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">com.shutterfly.ep.service.contentspace.impl.SflyDynamicContentServiceImpl</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">extension.core</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.4</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Create Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Content space</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.5</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Edit Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">com.shutterfly.ep.service.contentspace.impl.SflyDynamicContentServiceImpl</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">extension.core</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Content space</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.6</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Delete Dynamic content</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Content space</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3.7</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:Index="4" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Preview the dynamic content by evaluating override EP tag value</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4.0999999999999996</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Saved Condition</Data></Cell>
+    <Cell><Data ss:Type="String">Saved Condition for Shoppers</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4.2</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Saved Condition for Stores</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Validate user permission for this action</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4.3</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Saved Condition for Time</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Controller to handle DCD actions</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.0999999999999996</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Disable create/delete options when CS is not selected</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Create Dynamic content Delivery</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.2</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Controller to handle DCD actions</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Edit Dynamic content Delivery</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.3</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Read/ search for dynamic contents to be attached to the DCD</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Delete Dynamic content Delivery</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.4</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Create Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Use saved condition routine</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.6</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Edit Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.7</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Delete Dynamic content Delivery</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Read/ search for dynamic contents to be attached to the DCD</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.8</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Use saved condition</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5.9</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Add the changed object into selected Change set</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Override EP Tags</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Read the tags from DB and display</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:Index="4" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Save the changes</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6.1</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Override EP Tags</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Read the tags from DB and display</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6.2</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Modify and save the changes</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Data Sync DB flag setting</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">update TCHANGESET table to mark change set as 'ready to push'</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6.3</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Preview the dynamic content by evaluating override EP tag value</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">Object ReIndex</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">update UINDEXNOTIFY table</Data></Cell>
-    <Cell ss:StyleID="s82"/>
-    <Cell ss:StyleID="s82"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7.1</Data></Cell>
+    <Cell><Data ss:Type="String">Authorization</Data></Cell>
+    <Cell><Data ss:Type="String">Authorize whether logged in user has permission to perform the action (Change Set, Content Space, Dynami Content management etc)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7.2</Data></Cell>
+    <Cell><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell><Data ss:Type="String">Authentcate the log in user name/ password - Apigee</Data></Cell>
+   </Row>
+   <Row ss:Index="45" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8.1</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Data Sync DB flag setting</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">update TCHANGESET table to mark change set as 'ready to push'</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8.1999999999999993</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Object ReIndex</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">update UINDEXNOTIFY table</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
-   <Panes>
-    <Pane>
-     <Number>3</Number>
-     <ActiveRow>19</ActiveRow>
-     <ActiveCol>2</ActiveCol>
-    </Pane>
-   </Panes>
+   <Selected/>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -513,10 +560,10 @@
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="136"/>
    <Column ss:AutoFitWidth="0" ss:Width="203"/>
-   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s78">
+   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s80">
     <Cell><Data ss:Type="String">Phase 1 Objectives</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:StyleID="s79">
+   <Row ss:AutoFitHeight="0" ss:StyleID="s81">
     <Cell><Data ss:Type="String">Section</Data></Cell>
     <Cell><Data ss:Type="String">Component/Feature Required</Data></Cell>
     <Cell><Data ss:Type="String">Overview of Task</Data></Cell>
@@ -575,152 +622,152 @@
    </Row>
    <Row ss:Index="22" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Dynamic Content</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">View - DC</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Controller that loads paginated amount of content into DC directive</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">View - DC</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Controller that loads paginated amount of content into DC directive</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Search/filter panel</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Search/filter panel</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Directive - DC</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">directive will handle picture, name, status, container, size as well as display control buttons depending on the set state of DC</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Directive - DC</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">directive will handle picture, name, status, container, size as well as display control buttons depending on the set state of DC</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DC Edit Main</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Controller that handles new/editing Dynamic Content</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DC Edit Main</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Controller that handles new/editing Dynamic Content</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DC Edit Attributes</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">List a set of attributes that provide a means of clearing or editing values.  List can be filtered by language.</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DC Edit Attributes</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">List a set of attributes that provide a means of clearing or editing values.  List can be filtered by language.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Modal value editor.  Different views based off of value type.</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Modal value editor.  Different views based off of value type.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
-    <Cell ss:StyleID="s80"/>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Save Condition Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Angular Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Wiring for Create Condition; Update Condition; Retrieve Condition; Delete Condition</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Wiring for Create Condition; Update Condition; Retrieve Condition; Delete Condition</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Save Condition</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">View - Saved Condition</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">List conditions and give the user the ability to create new, edit or delete a saved condition.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">View - Saved Condition</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">List conditions and give the user the ability to create new, edit or delete a saved condition.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - Saved Condition Editor Summary</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Specify Name and Description</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - Saved Condition Editor Summary</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Specify Name and Description</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Directive - Condition Field</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Add/Delete Condition type; Condition operator; Condition value  condition statement with logical AND/OR between statements</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Directive - Condition Field</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Add/Delete Condition type; Condition operator; Condition value  condition statement with logical AND/OR between statements</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Add/Delete Condition blocks with logical AND/OR between blocks</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Add/Delete Condition blocks with logical AND/OR between blocks</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - Save Condition Builder</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Allows user to create or edit a saved condition by using the Condition field directive, start and end date picker and specify a store using a dual listbox.</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - Save Condition Builder</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Allows user to create or edit a saved condition by using the Condition field directive, start and end date picker and specify a store using a dual listbox.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"/>
+    <Cell ss:Index="3" ss:StyleID="s79"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">DC Delivery Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Angular Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Service wires into web API to be able to: Create DCD; Update DCD; retrieve DCD; Delete DCD</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Service wires into web API to be able to: Create DCD; Update DCD; retrieve DCD; Delete DCD</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
-    <Cell ss:StyleID="s80"/>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Dynamic Content Delivery</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">View - DCD</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Displays DCD directives paginated</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">View - DCD</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Displays DCD directives paginated</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">search/filter panel</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">search/filter panel</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Directive - DCD</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Directive will display DC picture; DC Name; Change Set Name; Priority; Time Condition; Shopper Condition; Store Condition;  Change Set status and control buttons depending on DCD state</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Directive - DCD</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Directive will display DC picture; DC Name; Change Set Name; Priority; Time Condition; Shopper Condition; Store Condition;  Change Set status and control buttons depending on DCD state</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DCD Edit Summary</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Create/Edit DCD: Edit Name; Description and set priority</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DCD Edit Summary</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Create/Edit DCD: Edit Name; Description and set priority</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DCD Edit DC</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DCD Edit DC</Data></Cell>
     <Cell><Data ss:Type="String">Create/Edit DCD: List and select the DC.  Filters for Name; Description; Content Wrapper; Container Type</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DCD Edit CS</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DCD Edit CS</Data></Cell>
     <Cell><Data ss:Type="String">Create/Edit DCD:  List of available content spaces with a name filter as well as a current assigned listbox in dual listbox fashion.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - DCD Edit Shopper</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">User sets the condition via Radio Button:  All Shoppers; Saved Condition; Create a Condition</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - DCD Edit Shopper</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">User sets the condition via Radio Button:  All Shoppers; Saved Condition; Create a Condition</Data></Cell>
    </Row>
    <Row ss:Index="46" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">EP Overrides</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Angular Service</Data></Cell>
     <Cell><Data ss:Type="String">Set and clear tag values</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - EP Tags</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - EP Tags</Data></Cell>
     <Cell><Data ss:Type="String">Display a list of possible EP tags</Data></Cell>
    </Row>
    <Row ss:Index="49" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Content Space Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Angular Service</Data></Cell>
     <Cell><Data ss:Type="String">Wiring to talk to web API to Create CS; Update CS; Retrieve CS; Delete CS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Content Space</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Directive - Content Space</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Directive - Content Space</Data></Cell>
     <Cell><Data ss:Type="String">Displays DC based on DCD rules and current EP overrides.  Displays name; description; change set assigned to.   Has edit and delete control buttons depending on the state of CS.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - Content Space</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - Content Space</Data></Cell>
     <Cell><Data ss:Type="String">Provides filter/search panel.  Lists CS Directive paginated.  Gives the user the ability to create new CS. Goto EP tag editor.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Modal - CS Editor</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Modal - CS Editor</Data></Cell>
     <Cell><Data ss:Type="String">Allows user to create or edit a Content Space</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Directive - DCD Viewer</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Directive - DCD Viewer</Data></Cell>
     <Cell><Data ss:Type="String">Displays the name; priority; assigned CSN; DC Name; type; status; container type; shoper condition; time condition and store condition</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">View - Content Space Full View</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">View - Content Space Full View</Data></Cell>
     <Cell><Data ss:Type="String">Displays content that was choosen by the DCD logic</Data></Cell>
    </Row>
    <Row ss:Index="57" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Settings Service</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Angular Service</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Angular Service</Data></Cell>
     <Cell><Data ss:Type="String">Wires to API to Update Settings; Retrieve Settings</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"/>
+    <Cell ss:Index="2" ss:StyleID="s79"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Settings</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">View - Settings</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">View - Settings</Data></Cell>
     <Cell><Data ss:Type="String">Has a selectable pull down for which store to view settings.  Provides a list of settings available for the selected store that the user can edit values</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">Modal - Attribute Editor</Data></Cell>
     <Cell><Data ss:Type="String">Editor for value based on what is the set type.   Most likely already be written by &quot;Dynamic Content: Modal - Attribute Editor&quot;</Data></Cell>
    </Row>
   </Table>
@@ -747,10 +794,10 @@
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="159"/>
    <Column ss:AutoFitWidth="0" ss:Width="213"/>
-   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s78">
+   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s80">
     <Cell><Data ss:Type="String">Phase 1 Objectives</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:StyleID="s79">
+   <Row ss:AutoFitHeight="0" ss:StyleID="s81">
     <Cell><Data ss:Type="String">Section</Data></Cell>
     <Cell><Data ss:Type="String">Component/Feature Required</Data></Cell>
     <Cell><Data ss:Type="String">Overview of Task</Data></Cell>
@@ -858,35 +905,35 @@
    </Row>
    <Row ss:Index="40" ss:AutoFitHeight="0">
     <Cell ss:Index="2"><Data ss:Type="String">Content Space</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Implement CS service from EP</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Implement CS service from EP</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/create</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/cs/create</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/retrieve</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/cs/retrieve</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/update</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/cs/update</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/delete</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/cs/delete</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/cs/search</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/cs/search</Data></Cell>
    </Row>
    <Row ss:Index="47" ss:AutoFitHeight="0">
     <Cell ss:Index="2"><Data ss:Type="String">Settings</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Implement Settings service from EP</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Implement Settings service from EP</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/retrieve</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/dcd/retrieve</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/update</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/dcd/update</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3" ss:StyleID="s80"><Data ss:Type="String">Create endpoint POST: /api/dcd/search</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s79"><Data ss:Type="String">Create endpoint POST: /api/dcd/search</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -897,7 +944,6 @@
     <VerticalResolution>-4</VerticalResolution>
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
-   <Selected/>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -908,7 +954,7 @@
    <Column ss:AutoFitWidth="0" ss:Width="155"/>
    <Column ss:AutoFitWidth="0" ss:Width="162"/>
    <Column ss:AutoFitWidth="0" ss:Width="144"/>
-   <Row ss:AutoFitHeight="0" ss:StyleID="s81">
+   <Row ss:AutoFitHeight="0" ss:StyleID="s82">
     <Cell><Data ss:Type="String">Local Path</Data></Cell>
     <Cell><Data ss:Type="String">URL Location</Data></Cell>
     <Cell><Data ss:Type="String">Backend Controller Class Name</Data></Cell>
